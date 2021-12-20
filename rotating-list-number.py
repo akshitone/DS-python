@@ -9,7 +9,8 @@ def count_rotations(nums):
 
     # the list is empty or
     # if the first item is less than the last item means that the list is already sorted or
-    # length is 1
+    # length is 1 
+    # then return 0
     if not nums or nums[0] < nums[nums_length - 1] or nums_length == 1:
         return counter
 
@@ -24,6 +25,6 @@ def count_rotations(nums):
 if __name__ == '__main__':
     rotated_list = [5, 6, 9, 0, 2, 3, 4]
     # rotated_list = [1, 2, 3, 4, 5, 6, 7]
-    rotated_list = [1]
+    # rotated_list = [1]
     result = count_rotations(rotated_list)
     print(result)
